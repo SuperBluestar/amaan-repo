@@ -1,5 +1,6 @@
 <template>
-  <form class="w-full flex flex-col items-start gap-2" @submit.prevent="submitHandler()" title="Form">
+  <form class="max-w-2xl mx-auto flex flex-col items-start gap-2 px-6 py-10 border rounded-2xl my-4" @submit.prevent="submitHandler()" title="Form">
+    <h3 class="text-2xl">Form</h3>
     <label for="email">Email</label>
     <input id="email" class="border px-4 py-2 outline-none rounded-xl w-full" type="email" name="email" v-model="emailRef" />
     <span v-if="errorEmailRef" class="text-red-500">{{ errorEmailRef }}</span>

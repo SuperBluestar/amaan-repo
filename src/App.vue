@@ -1,10 +1,12 @@
 <template>
   <Header />
   <router-view/>
+  <Footer />
 </template>
 
 <script lang="ts" setup>
 import Header from './layouts/Header/Header.vue';
+import Footer from './layouts/Footer/Footer.vue';
 </script>
 
 <style lang="scss">
